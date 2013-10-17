@@ -274,6 +274,12 @@
           _results = [];
           for (_i = 0, _len = _ref.length; _i < _len; _i++) {
             e = _ref[_i];
+            if(e == 'min') {
+            	e = this.xmin;
+            }
+            else if(e == 'max') {
+            	e = this.xmax;
+            }
             _results.push(Morris.parseDate(e));
           }
           return _results;
